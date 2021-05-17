@@ -1,0 +1,42 @@
+
+  <ion-app >
+    <ion-toolbar fxHide.gt-xs>
+      <div fxLayout="row" fxFlex="90%" fxFlexOffset="5%"  fxLayoutAlign="none center">
+        <div fxFlex="80%" >
+          <a  routerLink="/home"><span style="font-weight: bolder; font-size: larger;">Nwisoft</span></a>
+        </div>
+        <div  fxLayoutAlign="end" fxFlex="20%">
+          <ion-buttons>
+            <ion-menu-button>
+              <ion-icon slot="end" name="menu" id="icon" ></ion-icon>
+            </ion-menu-button>
+          </ion-buttons>
+        </div>
+      </div>
+    </ion-toolbar>
+
+    <ion-menu side="start">
+      <ion-content >
+        <ion-list >
+          <ion-menu-toggle fxFlex="30">
+            <ion-item lines="none" routerLink="/home" >
+              <label>Nwisoft</label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item lines="none" routerLink="/projects">
+              <label>Project</label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item lines="none" routerLink="/contact">
+              <ion-label>Contact</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-app>

@@ -1,0 +1,183 @@
+<ion-content fxLayout="column">
+  <app-navbar ></app-navbar>
+  <ion-grid  fxLayout="column" class="ion-no-padding">
+    <div fxLayout="row">
+      <div fxLayout="column" id="banner" fxLayoutAlign=" center" fxFlex="90%" fxFlexOffset="5%">
+        <h1 [ngStyle.lt-sm]="{'font-size': '30px'}">The heart of software development</h1>
+        <p class="ion-text-center">DIGITAL COMPANY, DIGITAL PRODUCT</p>
+        <P class="ion-text-center">CLIENT'S BUSINESS PROBLEMS ARE OUR INCENTIVES</P>
+        <ion-button routerLink="/contact">LET'S GET STARTED</ion-button>
+        <ion-img src="../../assets/apps.png"></ion-img>
+      </div>
+    </div>
+    <div id="about-us" fxLayout="row" fxLayout.lt-md="column" >
+      <div fxLayout="row" fxFlex="45%" fxFlexOffset="5%">
+        <div fxLayout="column"  fxFlexOrder.lt-sm="2" fxFlex="90%" fxFlexOffset.lt-md="5%">
+          <h1  [ngStyle.lt-sm]="{'margin-bottom': '0'}">// About Us</h1>
+          <h2 [ngStyle.lt-sm]="{ 'font-size': '30px'}">Your Partner for</h2>
+          <h2 [ngStyle.lt-sm]="{ 'font-size': '30px'}">Software Innovation</h2>
+          <p  [ngStyle.lt-md]="{ 'margin-top': '0'}" >
+            We build software solutions
+            that solves our client's business
+            challenges
+          </p>
+          <p >After starting with just one developer since 2019
+            Nwisoft has become one of the best IT employers 
+            in Rivers and reliable partner for dozens 
+            of companies all over the world
+          </p>
+          <p>
+            Nwisoft is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. 
+            We help businesses elevate their value through custom software development, product design, QA and consultancy services.
+          </p>
+
+          <div fxHide.gt-sm  id="about-img"  [ngStyle]="{'margin-top': '4em'}">
+            <ion-img src="../../assets/group.png" alt="about-us"></ion-img>
+          </div>
+
+          <div fxLayout="row">
+            <ion-card fxLayout="column"  class="card" [ngStyle.lt-md]="{'width': '30em', 'height': 'auto'}">
+              <ion-icon src="../../assets/experience.svg"></ion-icon>
+              <h4>Experience</h4>
+              <p>Our great team of more than 300 software experts.</p>
+            </ion-card>
+            <ion-card fxLayout="column" class="card"  [ngStyle.lt-md]="{'width': '30em', 'height': 'auto'}">
+              <ion-icon src="../../assets/support.svg"></ion-icon>
+              <h4>Quick Support</h4>
+              <p>We’ll help you test bold new ideas while sharing yours</p>
+            </ion-card>
+          </div>
+        </div>
+      </div>
+      <div fxHide.lt-md  fxFlex="45%" id="about-img" fxFlexOrder.lt-sm="1" [ngStyle.lt-sm]="{'margin-top': '4em'}">
+        <ion-img src="../../assets/group.png" alt="about-us"></ion-img>
+      </div>
+    </div>
+    <div fxLayout="row" id="techIndex" fxLayoutAlign="none center"[ngStyle.gt-xs]="{'height': '70vh'}">
+      <div fxLayout="column" fxFlexOffset="5%" fxFlex="90%">
+        <h1 class="ion-text-center">// Technology Index</h1>
+        <h2 class="ion-text-center">We Deliver Solution with</h2>
+        <h2 class="ion-text-center">the Goal of Trusting Relationships</h2>
+        <div fxLayout="row" fxLayout.lt-sm="column">
+          <ion-card [ngStyle.lt-md]="{'padding': '4em', 'background-color': 'white', 'color': 'black'}"  fxLayout="column" fxLayoutGap="1.5em" fxFlex="20%" fxLayoutAlign="center center">
+            <ion-icon [ngStyle.lt-md]="{ 'color': 'black'}"  src="../../assets/code.svg"></ion-icon>
+            <ion-label>WEB</ion-label>
+          </ion-card>
+          <ion-card [ngStyle.lt-md]="{'padding': '4em', 'background-color': 'white', 'color': 'black'}" fxLayout="column" fxLayoutGap="1.5em" fxFlex="20%" fxLayoutAlign="center center">
+            <ion-icon [ngStyle.lt-md]="{ 'color': 'black'}"  src="../../assets/android.svg"></ion-icon>
+            <ion-label>ANDROID</ion-label>
+          </ion-card>
+          <ion-card [ngStyle.lt-md]="{'padding': '4em', 'background-color': 'white', 'color': 'black'}" fxLayout="column" fxLayoutGap="1.5em" fxFlex="20%" fxLayoutAlign="center center">
+            <ion-icon [ngStyle.lt-md]="{ 'color': 'black'}"  src="../../assets/apple.svg"></ion-icon>
+            <ion-label>IOS</ion-label>
+          </ion-card>
+          <ion-card  [ngStyle.lt-md]="{'padding': '4em', 'background-color': 'white', 'color': 'black'}" fxLayout="column" fxLayoutGap="1.5em" fxFlex="20%" fxLayoutAlign="center center">
+            <ion-icon [ngStyle.lt-md]="{ 'color': 'black'}"  src="../../assets/watch.svg"></ion-icon>
+            <ion-label >WEARABLES</ion-label>
+          </ion-card>
+          <ion-card [ngStyle.lt-md]="{'padding': '4em', 'background-color': 'white', 'color': 'black'}" fxLayout="column" fxLayoutGap="1.5em" fxFlex="20%" fxLayoutAlign="center center">
+            <ion-icon [ngStyle.lt-md]="{ 'color': 'black'}"  src="../../assets/watching-tv.svg"></ion-icon>
+            <ion-label>TV</ion-label>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row">
+      <div id="services"  fxLayout="column" fxFlexOffset="5%" fxFlex="90%">
+        <div fxLayout="row" >
+          <div  >
+            <h1 >// Our Services</h1>
+            <h2 >We Offer a Wide</h2>
+            <h2 >Variety of IT Services</h2>
+          </div>
+        </div>
+        <div fxLayout="row wrap"   fxLayoutGap="1em" fxLayout.xs="column">
+          <div fxFlex="30%" fxLayout="row" fxLayoutGap="2em" class="servItem">
+            <div fxFlex="15%" ><ion-icon src="../../assets/computer.svg"></ion-icon></div>
+            <div fxFlex="80%">
+              <h3 >Web development</h3>
+              <p >Technical solutions of different complexity are applied in all stages of the web development process.
+                  As a result you get a highly digital product ready to use.</p>
+            </div>
+          </div>
+          <div fxFlex="30%" fxLayout="row" fxLayoutGap="2em" class="servItem">
+            <div fxFlex="15%"><ion-icon src="../../assets/smartphone.svg"></ion-icon></div>
+            <div fxFlex="80%">
+              <h3 >App development</h3>
+              <p >A whole world can be found in our mobile devices nowadays. That's why we deal with both cross-platform
+                  applications broadening the horizons of accessibility by each smartphone click.</p>
+            </div>
+          </div>
+          <div fxFlex="30%" fxLayout="row" fxLayoutGap="2em" class="servItem">
+            <div fxFlex="15%"><ion-icon src="../../assets/user-experience.svg"></ion-icon></div>
+            <div fxFlex="80%">
+              <h3 >UI/UX Design</h3>
+              <p >Creativity, Uniqueness. That's why we always keep in mind while buiding interfaces and dwrawing mock ups.
+                We want you to stand out from the crowd
+              </p>
+            </div>
+          </div>
+          <div fxFlex="30%" fxLayout="row" fxLayoutGap="2em" class="servItem">
+            <div fxFlex="15%"><ion-icon src="../../assets/it.svg"></ion-icon></div>
+            <div fxFlex="80%">
+              <h3 >IT Counsultancy</h3>
+              <p >Trust our top minds to eliminate workflow pain points, implement new tech, and consolidate app portfolios.
+              </p>
+            </div>
+          </div>
+          <div fxFlex="30%" fxLayout="row" fxLayoutGap="2em" class="servItem">
+            <div fxFlex="15%"><ion-icon src="../../assets/text.svg"></ion-icon></div>
+            <div fxFlex="80%">
+              <h3 >QA & Testing</h3>
+              <p >Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software.
+              </p>
+            </div>
+          </div>
+          <div fxFlex="30%" fxLayout="row" fxLayoutGap="2em" class="servItem">
+            <div fxFlex="15%"><ion-icon src="../../assets/united.svg"></ion-icon></div>
+            <div fxFlex="80%">
+              <h3> Dedicated Team</h3>
+              <p >Over the past decade, our customers succeeded by leveraging Intellectsoft’s process of building, motivating.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row" id="clients" [ngStyle.gt-sm]="{'height': '100vh'}" [ngStyle.sm]="{'height': '80vh'}">
+      <div fxLayout="column" fxFlexOffset="5%" fxFlex="90%">
+        <h1 class="ion-text-center">// Our Clients</h1>
+        <h2 class="ion-text-center">We are Trusted </h2>
+        <h2 class="ion-text-center">15+ Countries Worldwide</h2>
+        <div fxLayout="row" fxLayout.xs="column">
+          <ion-card fxLayout="column"  fxFlex="50%" [ngStyle.xs]="{'padding': '2em'}">
+            <div fxLayout="row" fxLayoutGap="1em">
+              <div fxFlex="20%"><ion-img src="../../assets/MOOKLE.png"></ion-img></div>
+              <div>
+                <h3>Moonkle LTD,</h3>
+                <h5>Client of Company</h5>
+              </div>
+            </div>
+            <p>"Patience. Infinite patience. No shortcuts. Very well thought out articulate communication. Clear milestones,
+               deadlines and fast work. Even if the client is being careless. The best part.. is always solving problems with
+               original ideals."
+            </p>
+          </ion-card>
+          <ion-card fxLayout="column"  fxFlex="50%" [ngStyle.xs]="{'padding': '2em'}">
+            <div fxLayout="row" fxLayoutGap="1em">
+              <div fxFlex="20%"><ion-img src="../../assets/SOFTEC.png"></ion-img></div>
+              <div>
+                <h3>Softech,</h3>
+                <h5>Client of Company</h5>
+              </div>
+            </div>
+            <p>"Very well thought out and articulate communication. Clear milestones deadlines and fast work. They are always 
+              developing solutions out of nowhere." 
+            </p>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+  </ion-grid>
+  <app-footer ></app-footer>
+</ion-content>

@@ -1,0 +1,20 @@
+<div fxLayout="row" fxFlex="90%" fxFlexOffset="5%"  fxLayoutAlign="none center" fxHide.xs>
+  <div fxFlex="80%" >
+    <a  routerLink="/home"><span style="font-weight: bolder; font-size: large;">Nwisoft</span></a>
+  </div>
+  <div fxLayout="row" fxFlex="20%" fxLayoutAlign="end center"   fxHide.lt-sm>
+    <div  fxFlex="50%" fxLayoutAlign="end">
+      <a class="ion-text-right" routerLinkActive="active" routerLink="/projects" >
+        <span>Projects</span>
+      </a>
+    </div>
+    <div fxFlex="50%" fxLayoutAlign="end">
+      <a routerLinkActive="active" routerLink="/contact" >
+        <span>Contact</span>
+      </a>
+    </div>
+  </div>
+  <div fxHide.gt-xs>
+    <ion-icon slot="end" name="menu" id="icon" ></ion-icon>
+  </div>
+</div>

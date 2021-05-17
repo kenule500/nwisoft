@@ -1,0 +1,81 @@
+
+
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#bg {
+    background: url('../../assets/contact.jpg');
+    background-size: cover;
+    height: 60vh;
+    padding-top: 3em;
+    color: white;
+
+        button {
+        border: 2px solid black;
+        color: black;
+        padding: 1em;
+        }
+        button:hover {
+            background-color: rgb(248, 239, 239);
+        }
+        
+        h2 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+}
+#contact {
+    margin-top: 6em;
+
+    h1{
+        color: #7F7AF0;
+    }
+    p {
+        line-height: 2em;
+    }
+
+    ion-card {
+        margin-top: 2em;
+        padding: 1em;
+        box-shadow: none !important;
+
+        ion-icon {
+            font-size: 30px;
+            color: #7F7AF0;
+        }
+    }
+
+    ion-card:hover {
+        box-shadow: 0 4px 8px 0 rgba(179, 176, 176, 0.19), 0 6px 20px 0 rgba(179, 179, 179, 0.19) !important;
+    }
+
+    ion-list {
+        margin-top: 1em;
+        max-width: 34em;
+        --ion-item-background: transparent;
+
+        ion-item {
+            --ion-item-background:#72B4E5;
+        }
+    }
+    #form {
+        background-image: linear-gradient(to right, #05D6FB, #6B49B5);
+        padding: 4em;
+
+        ion-button {
+            margin-top: 1em;
+            --background: white;
+            --color: black;
+        }
+        ion-label {
+            color: red;
+        }
+    }
+}
+#map {
+    height: 80vh;
+    margin-top: 5em;
+}

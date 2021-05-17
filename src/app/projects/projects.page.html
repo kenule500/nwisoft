@@ -1,0 +1,37 @@
+<ion-content fxLayout="column">
+  <app-navbar ></app-navbar>
+  <ion-grid class="ion-no-padding" fxLayout="column">
+    <div fxLayout="row" style="margin-top: 3em;">
+      <div fxLayout="column" fxFlexOffset="5%" fxFlex="90%">
+        <h1 class="ion-text-center">// latest case studies</h1>
+        <h2 class="ion-text-center">Introduce Our Projects</h2>
+        <p class="ion-text-center">Software development outsourcing is just a tool to achieve business goals. But there is no way</p>
+        <p class="ion-text-center">to get worthwhile results without cooperation and trust between a client company.</p>
+      </div>
+    </div>
+    <div fxLayout="row">
+      <div fxLayout="column" fxFlex="40%" fxFlexOffset="30%" fxFlex.xs="90%" fxFlexOffset.xs="5%">
+        <ion-segment value="all" (ionChange)="onFilterUpdate($event)" >
+          <ion-segment-button value="all" [ngStyle.xs]="{'font-size': '15px'}">all</ion-segment-button>
+          <ion-segment-button value="Design" [ngStyle.xs]="{'font-size': '15px'}">Design</ion-segment-button>
+          <ion-segment-button value="Development" [ngStyle.xs]="{'font-size': '15px'}">Development</ion-segment-button>
+        </ion-segment>
+      </div>
+    </div>
+    <ion-infinite-scroll>
+      <div fxLayout="row wrap" id="projItem" >
+        <div   class="images">
+          <div class="one-image" *ngFor="let img of relevantProj" >
+            <a *ngIf="img.type === 'Development'"  href="{{img.link}}" target="_blank" > <ion-img class="img"  src="{{img.featurePic}}"></ion-img></a>
+            <ion-img *ngIf="img.type === 'Design'"  class="img"  src="{{img.featurePic}}"></ion-img>
+            <div class="img-detail" fxHide.xs> 
+              <p>{{img.name}}</p>
+              <h3>{{img.type}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-infinite-scroll>
+  </ion-grid>
+  <app-footer></app-footer>
+</ion-content>
